@@ -1,0 +1,12 @@
+{
+	"name": "LS_ADLS_GEN2_02",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://storageacntazureproject.dfs.core.windows.net/",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDU2OTgyMUE4LTQyMEMtNDhDNi04QjU0LUI2REQ4MEQ2NEI2RV8yNzk2MTI5Ny1kMTBjLTQzMzYtOWY3My02NmY1YzExMDNlMzAiDQp9"
+		}
+	}
+}
