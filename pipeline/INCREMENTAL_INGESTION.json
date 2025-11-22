@@ -69,7 +69,7 @@
 						"parameters": {
 							"CONTAINER": "bronze",
 							"FOLDER": {
-								"value": "@pipeline().parameters.table",
+								"value": "@{pipeline().parameters.table}_cdc",
 								"type": "Expression"
 							},
 							"FILE": {
@@ -109,7 +109,10 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"CONTAINER": "bronze",
-							"FOLDER": "cdc",
+							"FOLDER": {
+								"value": "@{pipeline().parameters.table}_cdc",
+								"type": "Expression"
+							},
 							"FILE": "cdc.json"
 						}
 					},
@@ -272,7 +275,10 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"CONTAINER": "bronze",
-										"FOLDER": "cdc",
+										"FOLDER": {
+											"value": "@{pipeline().parameters.table}_cdc",
+											"type": "Expression"
+										},
 										"FILE": "empty.json"
 									}
 								}
@@ -283,7 +289,10 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"CONTAINER": "bronze",
-										"FOLDER": "cdc",
+										"FOLDER": {
+											"value": "@{pipeline().parameters.table}_cdc",
+											"type": "Expression"
+										},
 										"FILE": "cdc.json"
 									}
 								}
