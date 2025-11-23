@@ -1,0 +1,17 @@
+{
+	"name": "LS_SQL_DB_01",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "sqldbservernazureproject.database.windows.net",
+			"database": "sqldbnazureproject",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "admin313",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDU2OTgyMUE4LTQyMEMtNDhDNi04QjU0LUI2REQ4MEQ2NEI2RV8yMTc4NGRiMS1jOGJkLTRiYWMtOGFkYy0yY2JjN2I5YTE1M2QiDQp9"
+		}
+	}
+}
